@@ -5,8 +5,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  height: 100%; /* Ensure they take up full viewport height */
+  width: 100%; /* Ensure they take up full viewport width */
 }
 
-.Header {
-  background-color: aqua;
-}
