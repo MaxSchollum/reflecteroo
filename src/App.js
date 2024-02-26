@@ -1,23 +1,29 @@
-import logo from './logo.svg';
 import './App.css';
+import ChoiceBar from './Components/ChoiceBar';
+import Cover from './Components/Cover';
+import Header from './Components/Header';
+import Main from './Components/Main';
+import WeekBar from './Components/WeekBar';
+// import { Inline } from '@bedrock-layout/inline';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Fuck offf!!!
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <Header />
+        <div className='Cover' 
+        // align="stretch" gutter="size2" stretch={1}
+        > covertest
+          <ChoiceBar />
+          {/* <Main as="main">Main Content</Main> */}
+          {/* <WeekBar>Right Sidebar</WeekBar> */}
+        </div>
+          <div className='no-header-container'>
+            <p>contains</p>
+            console.log(fuckoff)
+          </div>
+          <p>
+            what a pain in the ass.
+          </p>
     </div>
   );
 }
