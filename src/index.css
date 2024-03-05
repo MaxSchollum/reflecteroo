@@ -11,3 +11,6 @@ body {
   width: 100%; /* Ensure they take up full viewport width */
 }
 
+.spacer{
+  padding: 5px;
+}

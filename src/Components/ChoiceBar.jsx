@@ -1,6 +1,6 @@
 import React from 'react'
-import Bubble from './Shared/Bubble'
-import YearSelector from './Shared/Selector'
+import Bubble from './ChoiceBoxComp/Bubble'
+import YearSelector from './ChoiceBoxComp/Selector'
 import Max from '../Assets/Max.jpeg'
 import { FaBullseye, FaCrosshairs, FaCalendar, FaBrain} from "react-icons/fa"
 
@@ -8,10 +8,10 @@ import { FaBullseye, FaCrosshairs, FaCalendar, FaBrain} from "react-icons/fa"
 function ChoiceBar() {
   return (
     <div className='ChoiceBar'>
-      Choice Bar
-      <br></br>
       <Bubble icon={Max} />
+      <div className='spacer'></div>
       <YearSelector />
+      <div className='spacer'></div>
       <Bubble icon={<FaCrosshairs size={25}/>} className={"TargetIdentity"} link={1}/>
       <Bubble icon={<FaBullseye size={25}/>} className={"AnnualTargets"} link={2}/>
       <Bubble icon={<FaCalendar size={25}/>} className={"QGoals"} link={3}/>
