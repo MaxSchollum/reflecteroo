@@ -1,8 +1,16 @@
 .App {
   text-align: center;
-  min-height: 100vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
+}
+
+.Cover {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  height: 100%;
+  overflow: hidden;
 }
 
 .App-header {
@@ -49,7 +57,7 @@
   height: 50px;
   border-radius: 50%;
   background-color: purple;
-  opacity: 50%; 
+  opacity: 1; 
   transition: transform 0.2s ease, color 0.2s ease; 
   text-decoration: none;
   background-size: cover; /* Ensures the image covers the entire bubble */
@@ -110,7 +118,7 @@
   width: 150px;
   height: auto;
   flex-shrink: 0;
-  background-color: lightblue; 
+  background-color: #1D3AA4; 
 }
 
 .WeekBarTitle{
@@ -120,96 +128,3 @@
   font-size: larger;
   font-weight: 600;
 }
-
-/* SearchBox.css */
-.SearchBoxContainer{
-  width: 100%;
-  padding: 10px;
-  box-sizing: border-box;
-}
-
-.search-box {
-  box-sizing: border-box;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  padding: 15px;
-  border-radius: 20px;
-  border: none;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  font-size: 5px;
-  outline: none;
-}
-
-.search-box::placeholder {
-  color: #ccc;
-}
-
-/* AddWeekButton.css */
-.AddWeekButtonContainer{
-  width: 100%;
-  padding: 10px;
-  box-sizing: border-box;
-}
-
-.add-week-button {
-  box-sizing: border-box;
-  display: block;
-  width: 100%;
-  padding: 15px;
-  margin: 10px 0;
-  background-color: #007aff;
-  color: white;
-  border: none;
-  border-radius: 20px;
-  font-size: 16px;
-  cursor: pointer;
-  outline: none;
-  transition: background-color 0.3s ease;
-}
-
-.add-week-button:hover {
-  background-color: #005ecb;
-}
-
-/* WeekButton.css */
-.week-button-container {
-  margin: 10px;
-}
-
-.week-button {
-  background-color: #007aff;
-  color: white;
-  padding: 5px 25px;
-  border: none;
-  border-radius: 10px;
-  font-size: 10px;
-  font-weight: 600;
-  cursor: pointer;
-  position: relative;
-  overflow: hidden; /* To contain the absolute positioned arrow */
-}
-
-.week-button .arrow {
-  display: inline-block;
-  margin-left: 5px;
-  transition: transform 0.3s ease;
-}
-
-.rotate {
-  transform: rotate(90deg);
-}
-
-.additional-buttons {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.3s ease, padding 0.3s ease;
-}
-
-.slide-in {
-  max-height: 200px; /* Adjust as necessary for your content */
-  padding: 10px 0;
-}
-
-/* Add more styles for the additional buttons as needed */

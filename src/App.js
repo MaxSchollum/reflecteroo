@@ -1,20 +1,14 @@
-import './App.css';
-import ChoiceBar from './Components/ChoiceBar';
-import Header from './Components/Header';
-import Main from './Components/Main';
-import WeekBar from './Components/WeekBar';
-// import { Inline } from '@bedrock-layout/inline';
+import { useState } from 'react';
+import Landing from './Components/Landing';
+import MainApp from './MainApp';
 
 function App() {
-  return (
-    <div className="App">
-        <Header />
-        <div className='Cover'>
-          <ChoiceBar />
-          <WeekBar />
-          <Main as="main"/>
-        </div>
-    </div>
+  const [user, setUser] = useState(null);
+
+  return user ? (
+    <MainApp user={user} />
+  ) : (
+    <Landing setUser={setUser} />
   );
 }
 

@@ -5,10 +5,10 @@ import Max from '../Assets/Max.jpeg'
 import { FaBullseye, FaCrosshairs, FaCalendar, FaBrain} from "react-icons/fa"
 
 
-function ChoiceBar() {
+function ChoiceBar({ user }) {
   return (
     <div className='ChoiceBar'>
-      <Bubble icon={Max} />
+      <Bubble icon={user.picture} />
       <div className='spacer'></div>
       <YearSelector />
       <div className='spacer'></div>

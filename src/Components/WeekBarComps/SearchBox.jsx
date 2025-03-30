@@ -1,3 +1,5 @@
+import './SearchBox.css';
+
 const SearchBox = ({ placeholder, ...props }) => {
     return (
         <div className="SearchBoxContainer">

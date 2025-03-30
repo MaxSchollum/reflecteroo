@@ -1,17 +1,24 @@
-import React from 'react'
-
+import React from 'react';
 
 const Bubble = ({ icon, link, className }) => {
   const classNames = `Bubble ${className}`;
-  const isImage = typeof icon === 'string' && icon.endsWith('.jpeg'); // Check if the icon is a JPEG image
-  const bubbleStyle = {
-    opacity: isImage ? 1 : 0.5 // Set opacity based on whether it's an image or not
-  };
+
+  const isImageUrl =
+    typeof icon === 'string' && icon.startsWith('http');
 
   return (
-    <a href={link} className={classNames} style={bubbleStyle}>
-      {isImage ? (
-        <img src={icon} alt="bubble icon" />
+    <a href={link} className={classNames}>
+      {isImageUrl ? (
+        <img
+          src={icon}
+          alt="bubble icon"
+          style={{
+            width: '100%',
+            height: '100%',
+            objectFit: 'cover',
+            borderRadius: '50%'
+          }}
+        />
       ) : (
         <span>{icon}</span>
       )}
@@ -19,11 +26,10 @@ const Bubble = ({ icon, link, className }) => {
   );
 };
 
-
 Bubble.defaultProps = {
-  icon: "🔘",
-  link: "#",
-  className: "",
+  icon: '🔘',
+  link: '#',
+  className: '',
 };
 
-export default Bubble
+export default Bubble;

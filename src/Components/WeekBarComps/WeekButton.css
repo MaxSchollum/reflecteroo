@@ -1,0 +1,47 @@
+.week-button-container {
+    margin: 10px 0;
+  }
+  
+  .week-button {
+    background-color: transparent;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .arrow {
+    transition: transform 0.2s ease;
+  }
+  
+  .rotate {
+    transform: rotate(180deg);
+  }
+  
+  .week-submenu {
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-top: 6px;
+  }
+  
+  .submenu-item {
+    font-size: 13px;
+    color: white;
+    cursor: pointer;
+    padding-left: 5px;
+  }
+  
+  .submenu-item.bold {
+    font-weight: 600;
+  }
+  

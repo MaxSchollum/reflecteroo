@@ -1,0 +1,26 @@
+/* AddWeekButton.css */
+.AddWeekButtonContainer{
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  .add-week-button {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    background-color: #007aff;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .add-week-button:hover {
+    background-color: #005ecb;
+  }

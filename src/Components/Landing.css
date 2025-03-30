@@ -1,0 +1,30 @@
+.Landing {
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .overlay {
+    text-align: center;
+    color: white;
+    backdrop-filter: blur(4px);
+    padding: 40px;
+    border-radius: 16px;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  
+  .overlay h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .overlay p {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #ccc;
+  }
+  

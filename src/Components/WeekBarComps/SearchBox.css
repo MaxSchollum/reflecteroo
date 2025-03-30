@@ -1,0 +1,26 @@
+/* SearchBox.css */
+.SearchBoxContainer{
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  .search-box {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 15px;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 5px;
+    outline: none;
+  }
+  
+  .search-box::placeholder {
+    color: #ccc;
+  }
+  
+  
